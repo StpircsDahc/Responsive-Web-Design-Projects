@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<link href="SurveyForm.css" rel="stylesheet" type="text/css">
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Application for permission to touch the TV remote</h1>
+  <p id="description"><b>Note:</b> Form must be completed at least 20 minutes prior intended use.</p>
+  <fieldset>
+    <legend>Personal Details</legend>
+    <div>
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="phone_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+    <div>
+      <label id="duration-label" for="duration">Duration:</label>
+      <input type="number" id="duration" name="duration" placeholder="show length in minutes">   </div>
+
+    <div>
+      <label for="Genre">Genre</label>
+      <p>
+        <input type="radio" name="Genre" value="sappy girl flick"> Romance<br>
+        <input type="radio" name="Genre" value="blood and gore horror flick"> Horror<br>
+        <input type="radio" name="Genre" value="bullets and bravado flick"> Action<br>
+        <input type="radio" name="Genre" value="other" checked> Other<br>
+      </p>
+    </div>
+    <label for="date-label">Original Release Date:</label>
+    <input type="date" name="bday">
+
+  </fieldset>
+  <fieldset>
+    <label for="Bribes">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="popcorn" value="Popcorn"> I have popcorn!!<br>
+      <input type="checkbox" name="candy" value="Candy"> I have candies!!<br>
+      <input type="checkbox" name="booze" value="Booze"> I have alcohol!!<br>
+      <input type="checkbox" name="food" value="Dinner" checked> I will provide foodzezzes!!<br>
+      <input type="checkbox" name="western" value="Western" checked> We will be watching a western!!<br>
+      <input type="checkbox" name="duke" value="The Duke" checked> John Wayne is starring!!<br>
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <div>
+      <label for="politics">Pet affinity:</label>
+      <select id="dropdown">
+  <option value="left">Dogs</option>
+  <option value="right">Cats</option>
+  <option value="conservative">Birds</option>
+  <option value="nazi">Reptiles</option>
+  </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Essay Section</legend>
+    <div>
+      <label for="msg"></label>
+      <p> In 50 words or more explain what you want to watch.</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your application</button>   </div>
+
+</form>
+  </div>
